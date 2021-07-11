@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        var date=prompt("Enter your input"); //Taking input from user
+            modifydate=date.split('-');  // Spliting the values
+
+            var month=["Jan","Feb","Mar","Apr","May","Jun","Jul","Agu","Sep","Oct","Nov","Dec"];  //Declaration of months
+
+            for(var i=0; i<(month.length); i++){
+                if(modifydate[1]==month[i]){
+                 console.log(`${modifydate[0]}-${i+1}-${modifydate[2]}`);
+             }
+            }
+    </script>
+</body>
+</html>
